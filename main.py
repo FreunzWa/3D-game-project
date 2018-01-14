@@ -46,7 +46,10 @@ if __name__ == "__main__":
         if (time.time())%1 == 0:
             entityList = list_sort(entityList)
 
-
+        if (time.time())%2 == 0:
+            #causes the background to flash white every 2 seconds for no reason. 
+            window.fill(WHITE) 
+           
 
         for entity in entityList:
             entity.draw(window, horizon, (player.x, player.y, player.z))
