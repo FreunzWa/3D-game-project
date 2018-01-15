@@ -22,9 +22,9 @@ if __name__ == "__main__":
         window = pygame.display.set_mode(displayResolution)
     horizon = 200
     new_tree = Entity((200, 0, 0), "tree.png")
-    #for i in range(0,50):
-    #    new_tree = Entity((random.randrange(-500,500), 0, random.randrange(-500,500)), "tree.png")
-    #    new_tree = Entity((random.randrange(-500,500), 0, random.randrange(-500,500)), "tree.png")
+    for i in range(0,50):
+        new_tree = Entity((random.randrange(-500,500), 0, random.randrange(-500,500)), "tree.png")
+        new_tree = Entity((random.randrange(-500,500), 0, random.randrange(-500,500)), "tree.png")
 
 
     player = Player((200,0,-100))
