@@ -15,7 +15,7 @@ class Entity:
         entityList.append(self)
 
     def draw(self, target_surface, horizon, (player_x, player_y, player_z)):
-        distance = math.sqrt(abs(float(player_z-self.z)**2 + float(player_x-self.x)**2))
+        distance = abs(float(player_z- self.z))
         print distance
         if distance <= 1 or distance >= 800:
             return 0
